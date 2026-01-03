@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Store</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    margin:0;
+    padding:15px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+.product{
+    background:#fff;
+    border-radius:18px;
+    padding:22px;
+    margin-bottom:30px;
+    width:100%;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+.product img{
+    width:100%;
+    height:280px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.name{
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:12px;
+}
+
+.price{
+    color:#e74c3c;
+    font-size:26px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.qty{
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+input[type="number"]{
+    width:100px;
+    padding:10px;
+    font-size:18px;
+    text-align:center;
+}
+
+button{
+    width:100%;
+    background:#0070ba;
+    color:#fff;
+    border:none;
+    padding:16px;
+    font-size:20px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005ea6;
+}
+</style>
+</head>
+<body>
+
+<h1>Store</h1>
+
+<!-- PRODUCT 1 -->
+<div class="product">
+    <img src="https://i.imgur.com/8Km9tLL.png" alt="Apple Watch">
+    <div class="name">Apple Watch</div>
+    <div class="price">220 USD</div>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="few.infirm.9f@icloud.com">
+        <input type="hidden" name="item_name" value="Apple Watch">
+        <input type="hidden" name="amount" value="220">
+        <input type="hidden" name="currency_code" value="USD">
+
+        <div class="qty">
+            Số lượng (tối đa 10):<br><br>
+            <input type="number" name="quantity" value="1" min="1" max="10">
+        </div>
+
+        <button type="submit">Mua ngay – PayPal</button>
+    </form>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product">
+    <img src="https://i.imgur.com/N7rlQYt.png" alt="Tai nghe không dây">
+    <div class="name">Tai nghe không dây</div>
+    <div class="price">110 USD</div>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="few.infirm.9f@icloud.com">
+        <input type="hidden" name="item_name" value="Wireless Earbuds">
+        <input type="hidden" name="amount" value="110">
+        <input type="hidden" name="currency_code" value="USD">
+
+        <div class="qty">
+            Số lượng (tối đa 10):<br><br>
+            <input type="number" name="quantity" value="1" min="1" max="10">
+        </div>
+
+        <button type="submit">Mua ngay – PayPal</button>
+    </form>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product">
+    <img src="https://i.imgur.com/V6Z7b9Q.png" alt="Apple Watch 2">
+    <div class="name">Apple Watch 2</div>
+    <div class="price">375 USD</div>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="few.infirm.9f@icloud.com">
+        <input type="hidden" name="item_name" value="Apple Watch 2">
+        <input type="hidden" name="amount" value="375">
+        <input type="hidden" name="currency_code" value="USD">
+
+        <div class="qty">
+            Số lượng (tối đa 10):<br><br>
+            <input type="number" name="quantity" value="1" min="1" max="10">
+        </div>
+
+        <button type="submit">Mua ngay – PayPal</button>
+    </form>
+</div>
+
+</body>
+</html>
